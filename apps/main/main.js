@@ -3,7 +3,7 @@
 var g;
 
 const DK08 = {
-    ON_TIME:5000,
+    ON_TIME:10000,
     RUNNING:false,
     touchTO:null,
     bltTO:null,
