@@ -18,7 +18,7 @@ Finally you can flash this firmware:
 
 This build has a modified `bluetooth` module to support the ANCS widget that connects to iPhones.
 
-Once Espruino is installed use the [DK08 App Loader](https://jeffmer.github.io/DK08Apps/) to load `Main` and `Clock` and the apps (only app is ***Heart*** and the widgets you want.
+Once Espruino is installed use the [DK08 App Loader](https://fanoush.github.io/DK08Apps/) to load `Main` and `Clock` and the apps (only app is ***Heart*** and the widgets you want.
 
 ### Controls
 
