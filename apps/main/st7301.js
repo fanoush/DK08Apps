@@ -126,12 +126,12 @@ function ST7301(){
    if (on){
      lcd_cmd(0x38); // high power mode
      delayms(125);
-     //lcd_cmd([0xcb,0x15]); // VCOMH voltage to 4.05V
+     lcd_cmd([0xcb,0x15]); // VCOMH voltage to 4.05V
      lcd_cmd([0xd6,0x1]); // change voltage source to vsh/vsl 1
      delayms(40);
    } else {
      //return; //disable for now
-     //lcd_cmd([0xcb,0x1f]); raise VCOMH voltage to 4.55V for high power mode, why when we are switching to low power mode?)
+     lcd_cmd([0xcb,0x1f]); raise VCOMH voltage to 4.55V for high power mode, why when we are switching to low power mode?)
      lcd_cmd([0xd6,0x3]); // change voltage source to vsh/vsl 3
      delayms(40);
      lcd_cmd(0x39); // low power mode on
@@ -187,7 +187,7 @@ function ST7301(){
   };
   
   g.backlight=function(on){
-    if (on) analogWrite(BL,0.5); else BL.reset();
+    if (on) analogWrite(BL,0.16); else BL.reset();
   };
   
   LCD_Init_Off();
